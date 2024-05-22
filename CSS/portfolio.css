@@ -1,62 +1,80 @@
 /* ESTILO GERAL */
 
-*{
+* {
 
-margin: 0;
-padding: 0;
-box-sizing:border-box ; 
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-} 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
 
-body{
+body {
 
     background-color: #fbf7f5;
     height: 100vh;
+
 }
 
-.interface{
+.interface {
 
-    max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.flex {
+
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #000000;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 40px;
+}
+
+button:hover {
+
+    box-shadow: 0px 0px 0px #fff9f9;
+    transform: scale(1.05);
 }
 
 /* ESTILO DO CABEÇALHO */
 
-header{
+header {
 
-    padding: 40px 4%;
-background-color: #daa520;
-
-
-}
-
-
-header > .interface{
-
-display: flex;
-align-items: center;
-justify-content: space-between;
+    padding: 40px 0px;
+    background-color: #daa520;
 
 
 }
 
-header nav ul{
+header nav ul {
 
-list-style-type: none;
-
-}
-header nav ul li{
-
-display: inline-block;
-padding: 0 40px;
+    list-style-type: none;
 
 }
 
-header a{
+header nav ul li {
+
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+header a {
 
     color: #000000;
     text-decoration: none;
@@ -64,44 +82,136 @@ header a{
     transition: 2.5;
 }
 
-header a:hover{
+header a:hover {
     color: #fff;
     transform: scale(1.05);
-   
-
-
 
 }
 
-header .btn-contato button{
+header .homepage a {
 
-padding: 10px 40px;
-font-size: 18px;
-font-weight 700;
-background-color:#000000 ; 
-border: 0;
-border-radius: 30px ;
-cursor: pointer;
-color: #fff;
-
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    align-items: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header .btn-contato button:hover{
-
-box-shadow: 0px 0px 0px #fff9f9;
-}
-
-header .homepage a{
-
-color:black;
-text-decoration: none;
-font-size: 50px;
-align-items: normal;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-padding: ;
-}
-
-header div ul{
+header div ul {
 
     list-style-type: none;
+    align-items: left;
+
+
 }
+
+
+
+
+
+/* ESTILO DO TOPO DO SITE */
+
+.topo-do-site {
+
+    padding: 40px 4%;
+
+
+}
+
+.topo-do-site .flex {
+
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+
+    font-size: 38px;
+    line-height: 90px;
+}
+
+.topo-do-site .txt-topo-do-site h1 span {
+
+    color: #daa520;
+    font-size: 50px;
+
+}
+
+.topo-do-site .txt-topo-do-site p {
+
+    font-size: 24px;
+    margin: 30px 0px;
+    text-align: justify;
+}
+
+.topo-do-site .img-topo-do-site img {
+
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DO SOBRE MIM */
+
+section .sobre {
+
+    padding: 40px 4%;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+
+}
+
+.sobre .txt-sobre h2 span {
+    color: #daa520;
+    display: block;
+
+
+}
+
+.sobre .txt-sobre p {
+
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 20
+}
+
+.btn-social button {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #daa520;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0 10px;
+}
+footer{
+padding: 60px 4%;
+box-shadow: 0 0 40px 10px #000000;
+
+}
+
+
